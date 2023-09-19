@@ -1,0 +1,127 @@
+@import url("normalize.css");
+
+/* root */
+:root {
+	--color-purple-100: #5b1ce6;
+	--color-purple-500: #9e86ff;
+	--color-gradient-blue: linear-gradient(
+		308deg,
+		#1400ff 15.36%,
+		#72aaff 84.52%
+	);
+	--color-gradient-alt: linear-gradient(
+		90deg,
+		#4710c1 3.28%,
+		#7857ff 50.58%,
+		#819bfd 96.22%
+	);
+	--color-gradient-pink: linear-gradient(
+		313deg,
+		#fc00c4 16.17%,
+		#ff8ce6 87.96%
+	);
+	--color-white: #ffffff;
+	--color-gray-50: #f0f0f0;
+	--color-gray-200: #999999;
+	--color-gray-300: #3c3c3c;
+	--color-gray-900: #0f0f0f;
+}
+
+/* Globales */
+body {
+	background-color: var(--color-gray-900);
+}
+
+h1,
+h2,
+h3 {
+	color: var(--color-white);
+	font-family: "Sintony", sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 4.8rem;
+}
+
+h2 {
+	font-size: 3.2rem;
+}
+
+h3 {
+	font-size: 2.2rem;
+}
+
+p {
+	color: var(--color-white);
+	font-family: "Sintony", sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+a {
+	color: var(--color-white);
+	font-family: "Sintony", sans-serif;
+	font-size: 2.2rem;
+	font-weight: 700;
+
+	transition: color 0.15s ease-in-out;
+}
+a.link--variant {
+	color: var(--color-gray-200);
+	font-weight: 400;
+}
+a:hover {
+	color: var(--color-purple-500);
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 5rem;
+	padding-block: 1rem;
+	padding-inline: 2rem;
+	width: fit-content;
+
+	background: var(--color-gray-300);
+
+	font-size: 1.8rem;
+	font-weight: 700;
+
+	transition: all 0.15s ease-in-out;
+}
+.btn:hover {
+	color: var(--color-white);
+	background: var(--color-purple-100);
+}
+.btn--gradient {
+	border: 3px solid transparent;
+	background: var(--color-gradient-alt);
+	background-size: 110% 110%;
+	background-position: center;
+
+	letter-spacing: 1.5px;
+}
+.btn--gradient:hover {
+	border: 3px solid var(--color-purple-500);
+	background: transparent;
+}
+.btn--brand {
+	border: 3px solid var(--color-purple-500);
+	padding-block: 0.4rem;
+	padding-inline: 1.2rem;
+	background: transparent;
+}
+.btn--brand:hover {
+	border: 3px solid transparent;
+	background: var(--color-gradient-alt);
+	background-size: 110% 110%;
+	background-position: center;
+}
+.btn--brand img {
+	width: 6.7rem;
+	height: 2.5rem;
+	object-fit: contain;
+}
