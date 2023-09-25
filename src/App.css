@@ -1,0 +1,159 @@
+@import url("./normalize.css");
+
+/* root */
+:root {
+	--primary-color: #5b1ce6;
+	--primary-color-variant: #9e86ff;
+	--gradient-color-blue: linear-gradient(
+		308deg,
+		#1400ff 15.36%,
+		#72aaff 84.52%
+	);
+	--gradient-color-blue-variant: linear-gradient(
+		90deg,
+		#4710c1 3.28%,
+		#7857ff 50.58%,
+		#819bfd 96.22%
+	);
+	--gradient-color-pink: linear-gradient(
+		313deg,
+		#fc00c4 16.17%,
+		#ff8ce6 87.96%
+	);
+	--white-color: #ffffff;
+	--gray-color-50: #f0f0f0;
+	--gray-color-200: #999999;
+	--gray-color-300: #3c3c3c;
+	--black-color: #0f0f0f;
+}
+
+/* Globales */
+body {
+	background-color: var(--black-color);
+}
+
+h1,
+h2,
+h3 {
+	color: var(--white-color);
+	font-family: "Sintony", sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 4.8rem;
+}
+
+h2 {
+	font-size: 3.2rem;
+}
+
+h3 {
+	font-size: 2.2rem;
+}
+
+p {
+	color: var(--white-color);
+	font-family: "Sintony", sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+a {
+	color: var(--white-color);
+	font-family: "Sintony", sans-serif;
+	font-size: 2.2rem;
+	font-weight: 700;
+
+	transition: color 0.15s ease-in-out;
+}
+a.link--variant {
+	color: var(--gray-color-200);
+	font-weight: 400;
+}
+a:hover {
+	color: var(--primary-color-variant);
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 5rem;
+	padding-block: 1rem;
+	padding-inline: 2rem;
+	width: fit-content;
+
+	background: var(--gray-color-300);
+
+	font-size: 1.8rem;
+	font-weight: 700;
+
+	transition: all 0.15s ease-in-out;
+}
+.btn:hover {
+	color: var(--white-color);
+	background: var(--primary-color);
+}
+.btn--gradient {
+	border: 3px solid transparent;
+	background: var(--gradient-color-blue-variant);
+	background-size: 110% 110%;
+	background-position: center;
+
+	letter-spacing: 1.5px;
+}
+.btn--gradient:hover {
+	border: 3px solid var(--primary-color-variant);
+	background: transparent;
+}
+.btn--brand {
+	border: 3px solid var(--primary-color-variant);
+	padding-block: 0.4rem;
+	padding-inline: 1.2rem;
+	background: transparent;
+}
+.btn--brand:hover {
+	border: 3px solid transparent;
+	background: var(--gradient-color-blue-variant);
+	background-size: 110% 110%;
+	background-position: center;
+}
+.btn--brand img {
+	width: 6.7rem;
+	height: 2.5rem;
+	object-fit: contain;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1rem;
+
+	background: var(--black-color);
+}
+.profile:hover {
+	cursor: pointer;
+}
+.profile__image {
+	width: 10rem;
+	height: 10rem;
+	border: 3px solid var(--primary-color);
+	border-radius: 50%;
+	object-fit: cover;
+}
+.profile:hover .profile__image {
+	border: 3px solid var(--primary-color-variant);
+}
+.profile__name {
+	color: var(--white-color);
+	font-size: 1.6rem;
+	font-family: "Sintony", sans-serif;
+}
+.profile--small .profile__image {
+	width: 3rem;
+	height: 3rem;
+}

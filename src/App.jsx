@@ -1,4 +1,4 @@
-import "./index.css";
+import "./App.css";
 
 function App() {
 	return (
@@ -36,6 +36,23 @@ function App() {
 			<a href="#" className="btn btn--brand">
 				<img src="/public/images/Branding-HBO.png" draggable="false" />
 			</a>
+
+			<button className="profile">
+				<img
+					className="profile__image"
+					src="/public/images/Profile.png"
+					draggable
+				/>
+				<span className="profile__name">Jon</span>
+			</button>
+
+			<button className="profile profile--small">
+				<img
+					className="profile__image"
+					src="/public/images/Profile.png"
+					draggable
+				/>
+			</button>
 		</>
 	);
 }
