@@ -53,6 +53,58 @@ function App() {
 					draggable
 				/>
 			</button>
+
+			<div className="card card--star">
+				<img
+					className="card__image"
+					src="/public/images/Card-star.jpeg"
+					draggable="false"
+				/>
+
+				<div className="card__play"></div>
+			</div>
+
+			<div className="card card--medium">
+				<img
+					className="card__image"
+					src="/public/images/Card-medium.jpeg"
+					draggable="false"
+				/>
+
+				<div className="card__play">
+					<img
+						className="card__icon"
+						src="/public/images/btn--play.svg"
+						draggable="false"
+					/>
+					<img
+						className="card__icon"
+						src="/public/images/btn--add.svg"
+						draggable="false"
+					/>
+				</div>
+			</div>
+
+			<div className="card card--cta">
+				<img
+					className="card__image"
+					src="/public/images/Card-CTA.jpeg"
+					draggable="false"
+				/>
+
+				<div className="card__play">
+					<img
+						className="card__icon"
+						src="/public/images/btn--play.svg"
+						draggable="false"
+					/>
+					<img
+						className="card__icon"
+						src="/public/images/btn--add.svg"
+						draggable="false"
+					/>
+				</div>
+			</div>
 		</>
 	);
 }
