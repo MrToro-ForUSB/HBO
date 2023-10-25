@@ -20,6 +20,12 @@
 		#fc00c4 16.17%,
 		#ff8ce6 87.96%
 	);
+	--gradient-color-purple: linear-gradient(
+		90deg,
+		#9a35ef 0.97%,
+		#4b00c4 46.41%,
+		#4176d6 101.25%
+	);
 	--white-color: #ffffff;
 	--gray-color-50: #f0f0f0;
 	--gray-color-200: #999999;
@@ -133,20 +139,20 @@ a:hover {
 	flex-direction: column;
 	gap: 1rem;
 
-	background: var(--black-color);
+	background: transparent;
 }
 .profile:hover {
 	cursor: pointer;
 }
 .profile__image {
-	width: 10rem;
-	height: 10rem;
-	border: 3px solid var(--primary-color);
+	width: 15rem;
+	height: 15rem;
+	border: 5px solid var(--primary-color);
 	border-radius: 50%;
 	object-fit: cover;
 }
 .profile:hover .profile__image {
-	border: 3px solid var(--primary-color-variant);
+	border: 5px solid var(--primary-color-variant);
 }
 .profile__name {
 	color: var(--white-color);

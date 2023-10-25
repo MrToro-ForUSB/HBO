@@ -1,0 +1,25 @@
+.splash {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: var(--gradient-color-purple);
+}
+.splash__loading {
+	position: absolute;
+	bottom: 6rem;
+	display: flex;
+	gap: 0.7rem;
+}
+.splash__loading-circle {
+	color: white;
+	font-size: 2rem;
+	opacity: 0.3;
+
+	transition: opacity 1s ease-in-out;
+}
+.splash__loading-circle.active {
+	opacity: 1;
+}

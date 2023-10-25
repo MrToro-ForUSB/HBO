@@ -1,0 +1,80 @@
+.profile-page {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	justify-items: center;
+	align-items: center;
+	padding: 2rem;
+	height: 100vh;
+
+	background-image: url("/public/images/Profile-Background.svg");
+	background-size: cover;
+}
+.profie-page__heading {
+	display: grid;
+	align-self: baseline;
+	justify-items: center;
+	gap: 16px;
+}
+.profile-page__profiles {
+	display: flex;
+	gap: 8rem;
+}
+.profie-page__footing {
+	display: grid;
+	align-self: end;
+	justify-items: center;
+	gap: 32px;
+}
+.profile-page__logo {
+	height: 62px;
+}
+.profile-page__title {
+	font-weight: 400;
+}
+.profie-page__add-profile-buttons {
+	display: flex;
+	gap: 32px;
+}
+.profile-page__add-button {
+	display: flex;
+	width: 202px;
+	height: 44px;
+	padding: 10px 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	border-radius: 26px;
+	background: rgba(255, 255, 255, 0.2);
+
+	color: var(--white-color);
+	font-family: "Sintony", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 1.2px;
+	line-height: 0px;
+	transition: color 0.15s ease-in-out;
+}
+.profile-page__add-button:hover {
+	background: rgba(255, 255, 255, 0.3);
+	cursor: pointer;
+}
+.profile-page__add-icon {
+	width: 24px;
+	height: 24px;
+}
+.profie-page__manager-profiles {
+	background-color: transparent;
+
+	color: var(--primary-color-variant);
+	text-align: center;
+	font-family: "Sintony", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 1.2px;
+	transition: color 0.15s ease-in-out;
+}
+.profie-page__manager-profiles:hover {
+	color: var(--primary-color);
+	cursor: pointer;
+}
